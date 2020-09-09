@@ -1,5 +1,5 @@
-import { hurra, hest } from ServiceWorkerRegistration;
+var hurra = require('./server');
 
-hurra.hurra;
+hurra.hurra2;
 
-hurra.hest;
+hurra.hest
