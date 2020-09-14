@@ -1,13 +1,6 @@
-function hurra() {
-    console.log(`Hurra 2`);
-}
+var http = require('http');
 
-function hest() {
-    console.log(`Hest`);
-}
-
-
-hurra()
-
-export { hurra, hest};
-
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(8080);
